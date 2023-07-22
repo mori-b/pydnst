@@ -19,7 +19,7 @@ from setuptools import setup, find_packages
 from codecs import open
 from os import path
 
-VERSION = '1.0.0'
+VERSION = '1.0.1'
 
 here = path.abspath(path.dirname(__file__))
 # Get the long description from the README file
@@ -54,7 +54,7 @@ setup(
     # This is a one-line description or tagline of what your project does. This
     # corresponds to the "Summary" metadata field:
     # https://packaging.python.org/specifications/core-metadata/#summary
-    description='Simple secure asynchronous message queue',  # Required
+    description='DNS Tunneling client and server',  # Required
 
     # This is an optional longer description of your project that represents
     # the body of text which users will see when they visit PyPI.
