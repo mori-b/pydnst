@@ -28,18 +28,18 @@ You can then configure your pydnst.toml field DNST_SERVER_NAME, and run pydnst c
 <a name="usage"></a>
 ## USAGE
 
-###Install the pydnst package on client and server
+### Install the pydnst package on client and server
 
     pip3 install pydnst
     python3 -m pydnst --help
     
-###Generate certificates (recommended), to encrypt the shared key transfer between client and server
+### Generate certificates (recommended), to encrypt the shared key transfer between client and server
 This creates server_private.pem (copy to server) and server_public.pem (copy to client).
 After copying server_private.pem to server, don't forget to chmod 600.
 
     python3 -m pydnst create_certificates
     
-###Generate configuration
+### Generate configuration
 This creates pydnst.toml : edit if needed and then copy to client and server.  
 On client, edit the MAIN_INTERFACE to use the DNS server of this interface, or DNS_SERVER_ADDRESS to circumvent it.  
 On server, edit the LISTENING_INTERFACE.  
@@ -47,7 +47,7 @@ On both, specify the DNST_SERVER_NAME (the DNS name purchased).
 
     python3 -m pydnst config
     
-###On server
+### On server
 In one terminal, run the server (pydnst.toml must be in the current directory) :   
 Logs are under pydnst.log  
 
@@ -57,7 +57,7 @@ In another terminal, run the commander (pydnst.toml must be in the current direc
 
     python3 -m pydnst server c2
     
-###On client
+### On client
 In one terminal, run the client (pydnst.toml must be in the current directory) :   
 Logs are under pydnst.log  
 
