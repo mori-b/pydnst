@@ -17,6 +17,8 @@ The server can manage up to 250 clients, communication is encrypted with a uniqu
 A simple rich interface on the server side enables to send commands to specific clients, and watch the responses in real-time.  
 The client being implemented in Python is not stealth.  
 
+![alt text](https://github.com/mori-b/pydnst/assets/22458480/fbd0e97c-2030-467b-94e0-b0943f1a9b1a)
+
 <a name="setup"></a>
 ## SET UP
 
