@@ -11,7 +11,7 @@ For convenience the client and server are in the same package, however the "rich
 <a name="features"></a>
 ## FEATURES
 
-pydnst is a DNS tunneling implementation in Python, supporting Linux only.  
+pydnst is a DNS tunneling implementation in Python, supporting Linux only (the client might require a few paths tweaks to run on Windows).  
 The client sends keep-alive requests every 30 seconds. If the server has a command to send to a specific client, it sends it in a response to a keep-alive. Then the client sends another query containing the command response.  
 The server can manage up to 250 clients, communication is encrypted with a unique Fernet key per client, generated on the fly and shared using RSA encryption.  
 A simple rich interface on the server side enables to send commands to specific clients, and watch the responses in real-time.  
